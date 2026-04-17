@@ -1,16 +1,23 @@
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
+import logo from '../../assets/img/nubdexchange_logo.png';
 
 const inputClasses =
-  'mt-2 w-full rounded-xl border border-zinc-300 bg-zinc-100 px-4 py-3 text-sm text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-900 focus:bg-zinc-50';
+  'mt-2 w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-amber-300 focus:bg-slate-900';
 
 const actionButtonClassName = 'w-full rounded-xl py-3 text-[11px] tracking-[0.2em]';
 
 const SignInPage = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">Log In</h1>
-      <p className="mt-3 text-sm leading-6 text-zinc-600">
+      <div className="flex items-center gap-4">
+        <img src={logo} alt="BulldogEx" className="h-14 w-14 rounded-full border-2 border-amber-300 bg-slate-950 object-contain" />
+        <div>
+          <p className="text-sm uppercase tracking-[0.32em] text-amber-200">Welcome back</p>
+          <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl">Log In</h1>
+        </div>
+      </div>
+      <p className="mt-4 text-sm leading-6 text-slate-400">
         Access your store account to review orders, saved items, and pickup details.
       </p>
 
@@ -58,21 +65,34 @@ const SignInPage = () => {
           Log In
         </Button>
 
-        <div className="grid gap-3 pt-2 sm:grid-cols-2">
-          <Button type="button" variant="secondary" className={actionButtonClassName}>
-            Log In with Google
+        <div className="grid gap-3 pt-2 sm:grid-cols-1">
+          <Button type="button" variant="primary" className={actionButtonClassName}>
+            Continue with Apple
           </Button>
-          <Button type="button" variant="secondary" className={actionButtonClassName}>
-            Log In with Apple
+          <Button type="button" variant="primary" className={actionButtonClassName}>
+            Continue with Google
+          </Button>
+          <Button type="button" variant="primary" className={actionButtonClassName}>
+            Continue with Facebook
           </Button>
         </div>
       </form>
 
       <div className="mt-8 border-t border-zinc-200 pt-6 text-sm text-zinc-600">
-        No account yet?{' '}
-        <Link to="/auth/signup" className="font-semibold text-zinc-900 transition hover:text-zinc-600">
-          Sign Up
-        </Link>
+        <div className="flex flex-wrap items-center gap-4">
+          <Link
+            to="/"
+            className="rounded-full border border-slate-900/20 bg-slate-100 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-900 transition hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-300"
+          >
+            Home
+          </Link>
+          <p>
+            No account yet?{' '}
+            <Link to="/auth/signup" className="font-semibold text-slate-100 transition hover:text-white">
+              Sign Up
+            </Link>
+          </p>
+        </div>
       </div>
     </>
   );
