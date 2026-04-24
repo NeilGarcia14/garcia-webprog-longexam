@@ -1,5 +1,9 @@
 import Button from '../../components/Button';
 import logo from '../../assets/img/nubdexchange_logo.png';
+import earbuds from '../../assets/img/earbuds.jpg';
+import smartHome from '../../assets/img/smart_home.jpg';
+import herb from '../../assets/img/herb.jpg';
+import deskLamp from '../../assets/img/desk_lamp.jpg';
 
 const AboutPage = () => {
   return (
@@ -106,17 +110,17 @@ const AboutPage = () => {
               Category Grid
             </p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                <img src={earbuds} alt="Earbuds" className="h-full w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                <img src={smartHome} alt="Smart Home" className="h-full w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                <img src={herb} alt="Herb" className="h-full w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                <img src={deskLamp} alt="Desk Lamp" className="h-full w-full object-cover" />
               </div>
             </div>
             <Button to="/products" className="mt-5">View Products</Button>

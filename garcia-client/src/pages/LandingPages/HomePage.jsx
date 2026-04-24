@@ -1,5 +1,8 @@
 import Button from '../../components/Button';
 import banner from '../../assets/img/nu_bulldogex_banner.jpg';
+import earbuds from '../../assets/img/earbuds.jpg';
+import deskLamp from '../../assets/img/desk_lamp.jpg';
+import shirtClassic from '../../assets/img/nu_shirt_classic.jpg';
 
 const HomePage = () => {
     return (
@@ -80,38 +83,38 @@ const HomePage = () => {
                     <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Simple store cards</h2>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-3">
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                <div className="grid gap-4 md:grid-cols-3 items-stretch">
+                    <article className="flex h-full flex-col rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
+                        <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                            <img src={earbuds} alt="Daily essentials" className="h-full w-full object-cover" />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Daily Essentials</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
                             Bags, tumblers, lanyards, and items used every school day.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">View Products</Button>
+                        <Button to="/products" className="mt-4 self-start" variant="primary">View Products</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="flex h-full flex-col rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
+                        <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                            <img src={deskLamp} alt="Study supplies" className="h-full w-full object-cover" />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Study Supplies</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
                             Notes, desk tools, and study kits for class and review weeks.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">Shop Supplies</Button>
+                        <Button to="/products" className="mt-4 self-start" variant="primary">Shop Supplies</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="flex h-full flex-col rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
+                        <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
+                            <img src={shirtClassic} alt="Campus apparel" className="h-full w-full object-cover" />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Campus Apparel</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
                             Comfortable pieces for class days, commute days, and weekends.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">
+                        <Button to="/products" className="mt-4 self-start" variant="primary">
                             View Apparel
                         </Button>
                     </article>
