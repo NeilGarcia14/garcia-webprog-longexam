@@ -1,3 +1,16 @@
+import earbudsImg from './img/earbuds.jpg';
+import smartHomeImg from './img/smart_home.jpg';
+import herbImg from './img/herb.jpg';
+import deskLampImg from './img/desk_lamp.jpg';
+import vintageJacketImg from './img/vintage_jacket.jpg';
+import athleticShoesImg from './img/athletic_shoes.jpg';
+import chargingStationImg from './img/charging_station.jpg';
+import coffeeMakerImg from './img/coffee_maker.jpg';
+import kojicImg from './img/kojic.jpg';
+import robotImg from './img/robot.jpg';
+import powerbankImg from './img/powerbank.jpg';
+import steelWaterBottleImg from './img/steel_water_bottle.jpg';
+
 const products = [
   {
     name: 'wireless-earbuds',
@@ -5,7 +18,7 @@ const products = [
     category: 'Electronics',
     price: 'PHP 2,499',
     stock: 'In stock',
-    image: '/src/assets/img/earbuds.jpg',
+    image: earbudsImg,
     content: [
       'Crystal-clear sound with active noise cancellation for immersive listening experiences.',
       'Comfortable ergonomic design with 8-hour battery life and quick charging capability.',
@@ -18,7 +31,7 @@ const products = [
     category: 'Electronics',
     price: 'PHP 3,999',
     stock: 'In stock',
-    image: '/src/assets/img/smart_home.jpg',
+    image: smartHomeImg,
     content: [
       'Centralize control of all your smart devices with voice commands and mobile app integration.',
       'Compatible with major smart home ecosystems including lights, thermostats, and security systems.',
@@ -31,7 +44,7 @@ const products = [
     category: 'Home & Garden',
     price: 'PHP 899',
     stock: 'In stock',
-    image: '/src/assets/img/herb.jpg',
+    image: herbImg,
     content: [
       'Complete indoor gardening starter kit with basil, mint, rosemary, and thyme seeds.',
       'Includes biodegradable pots, organic soil, and easy-to-follow growing instructions.',
@@ -44,7 +57,7 @@ const products = [
     category: 'Home & Garden',
     price: 'PHP 1,299',
     stock: 'Low stock',
-    image: '/src/assets/img/desk_lamp.jpg',
+    image: deskLampImg,
     content: [
       'Sleek Scandinavian design with adjustable brightness and color temperature settings.',
       'USB rechargeable with touch controls and memory function for preferred settings.',
@@ -57,7 +70,7 @@ const products = [
     category: 'Fashion',
     price: 'PHP 4,999',
     stock: 'In stock',
-    image: '/src/assets/img/vintage_jacket.jpg',
+    image: vintageJacketImg,
     content: [
       'Timeless motorcycle-inspired design crafted from premium vegetable-tanned leather.',
       'Features reinforced stitching, brass zippers, and a relaxed fit for all-day comfort.',
@@ -70,7 +83,7 @@ const products = [
     category: 'Sports & Outdoors',
     price: 'PHP 3,499',
     stock: 'In stock',
-    image: '/src/assets/img/athletic_shoes.jpg',
+    image: athleticShoesImg,
     content: [
       'Engineered with advanced cushioning technology and breathable mesh upper for optimal performance.',
       'Lightweight design with responsive soles that adapt to different terrains and activities.',
@@ -83,7 +96,7 @@ const products = [
     category: 'Electronics',
     price: 'PHP 1,799',
     stock: 'In stock',
-    image: '/src/assets/img/charging_station.jpg',
+    image: chargingStationImg,
     content: [
       'Charge up to 4 devices simultaneously with fast wireless charging technology.',
       'Includes adjustable phone stands, cable management, and LED indicators.',
@@ -96,7 +109,7 @@ const products = [
     category: 'Home & Garden',
     price: 'PHP 2,299',
     stock: 'Preorder',
-    image: '/src/assets/img/coffee_maker.jpg',
+    image: coffeeMakerImg,
     content: [
       'Handcrafted ceramic dripper with stainless steel stand for the perfect manual brew.',
       'Includes premium paper filters and detailed brewing guide for coffee enthusiasts.',
@@ -109,7 +122,7 @@ const products = [
     category: 'Health & Beauty',
     price: 'PHP 1,999',
     stock: 'In stock',
-    image: '/src/assets/img/kojic.jpg',
+    image: kojicImg,
     content: [
       'Complete 5-piece skincare routine with gentle, effective formulas for all skin types.',
       'Includes cleanser, toner, serum, moisturizer, and SPF protection in sustainable packaging.',
@@ -122,7 +135,7 @@ const products = [
     category: 'Toys & Games',
     price: 'PHP 2,999',
     stock: 'In stock',
-    image: '/src/assets/img/robot.jpg',
+    image: robotImg,
     content: [
       'Educational robot that teaches programming concepts through fun, hands-on activities.',
       'Compatible with visual programming languages and includes challenge-based learning modules.',
@@ -135,7 +148,7 @@ const products = [
     category: 'Electronics',
     price: 'PHP 1,499',
     stock: 'In stock',
-    image: '/src/assets/img/powerbank.jpg',
+    image: powerbankImg,
     content: [
       '20000mAh capacity with fast charging technology and multiple USB ports for all devices.',
       'Compact and lightweight design with built-in LED battery indicator and safety features.',
@@ -148,7 +161,7 @@ const products = [
     category: 'Sports & Outdoors',
     price: 'PHP 799',
     stock: 'In stock',
-    image: '/src/assets/img/steel_water_bottle.jpg',
+    image: steelWaterBottleImg,
     content: [
       'Double-wall insulated bottle that keeps drinks cold for 24 hours or hot for 12 hours.',
       'Made from recycled stainless steel with a powder-coated finish and leak-proof cap.',

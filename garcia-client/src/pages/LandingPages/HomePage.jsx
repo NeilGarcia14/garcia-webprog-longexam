@@ -1,4 +1,4 @@
-import Button from '../../components/Button';
+ import Button from '../../components/Button';
 import banner from '../../assets/img/nu_bulldogex_banner.jpg';
 import earbuds from '../../assets/img/earbuds.jpg';
 import deskLamp from '../../assets/img/desk_lamp.jpg';
@@ -88,9 +88,9 @@ const HomePage = () => {
                         <div className="overflow-hidden rounded-[1.25rem] border-2 border-zinc-300 bg-zinc-200">
                             <img src={earbuds} alt="Daily essentials" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Daily Essentials</h3>
+                        <h3 className="mt-4 text-lg font-semibold text-zinc-900"> Output Devices </h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
-                            Bags, tumblers, lanyards, and items used every school day.
+                            Monitors, printers, speakers, and headphones/earphones.
                         </p>
                         <Button to="/products" className="mt-4 self-start" variant="primary">View Products</Button>
                     </article>
